@@ -146,6 +146,18 @@
     cursor: pointer;
     color: #6b7280;
   }
+  .toggle-confirmPassword{
+
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6b7280;
+  
+  }
   
   .toggle-password:hover {
     color: #374151;
