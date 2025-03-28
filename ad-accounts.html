@@ -1,97 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Transaction</title>
-  <link rel="stylesheet" href="./css/afterlogin.css" />
-  <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transaction</title>
+    <link rel="stylesheet" href="./css/afterlogin.css" />
+    <link rel="stylesheet" href="./css/ad-account.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="logo-container">
+          <img
+            src="assets/HypeAd logo.png"
+            alt="Company Logo"
+            class="sidebar-logo"
+          />
+        </div>
 
-  <div class="dashboard">
+        <nav class="sidebar-nav">
+          <a href="#" class="sidebar-link">
+            <i data-lucide="home"></i>
+            <span>Dashboard</span>
+          </a>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <div class="logo-container">
-        <img src="assets/HypeAd logo.png" alt="Company Logo" class="sidebar-logo" />
+          <a href="#" class="sidebar-link">
+            <i data-lucide="dollar-sign"></i>
+            <span>Transaction</span>
+          </a>
+
+          <a href="#" class="sidebar-link active">
+            <i data-lucide="users"></i>
+            <span>AD Accounts</span>
+          </a>
+
+          <a href="#" class="sidebar-link">
+            <i data-lucide="credit-card"></i>
+            <span>Billings</span>
+          </a>
+
+          <a href="#" class="sidebar-link">
+            <i data-lucide="package"></i>
+            <span>Services</span>
+          </a>
+
+          <a href="#" class="sidebar-link">
+            <i data-lucide="file-text"></i>
+            <span>Reports</span>
+          </a>
+
+          <a href="#" class="sidebar-link">
+            <i data-lucide="life-buoy"></i>
+            <span>Support</span>
+          </a>
+
+          <a href="#" class="sidebar-link">
+            <i data-lucide="user"></i>
+            <span>My Account</span>
+          </a>
+
+          <a href="#" class="sidebar-link">
+            <i data-lucide="settings"></i>
+            <span>Settings</span>
+          </a>
+        </nav>
       </div>
-      
-      <nav class="sidebar-nav">
-        <a href="#" class="sidebar-link ">
-          <i data-lucide="home"></i>
-          <span>Dashboard</span>
-        </a>
 
-        <a href="#" class="sidebar-link ">
-          <i data-lucide="dollar-sign"></i>
-          <span>Transaction</span>
-        </a>
-
-
-        <a href="#" class="sidebar-link active">
-          <i data-lucide="users"></i>
-          <span> AD Accounts</span>
-        </a>
-
-        <a href="#" class="sidebar-link">
-          <i data-lucide="credit-card"></i>
-          <span>Billings</span>
-        </a>
-        <a href="#" class="sidebar-link">
-          <i data-lucide="package"></i>
-          <span>Services</span>
-        </a>
-        <a href="#" class="sidebar-link">
-          <i data-lucide="file-text"></i>
-          <span>Reports</span>
-        </a>
-        
-        <a href="#" class="sidebar-link">
-          <i data-lucide="life-buoy"></i>
-          <span>Support</span>
-        </a>
-        <a href="#" class="sidebar-link">
-          <i data-lucide="user"></i>
-          <span>My Account</span>
-        </a>
-        <a href="#" class="sidebar-link">
-          <i data-lucide="settings"></i>
-          <span>Settings</span>
-          
-        </a>
-      </nav>
-    </div>
-    <!-- Main Content -->
-    <div class="main-content">
+      <!-- Main Content -->
+      <div class="main-content">
         <!-- Header -->
         <header class="header">
-          <h1 class="page-title">Ads Accounts </h1>
-  
+          <h1 class="page-title">Ads Accounts</h1>
+
           <div class="header-actions">
             <div class="search-box">
               <i data-lucide="search"></i>
-              <input type="text" placeholder="Search for something">
+              <input type="text" placeholder="Search for something" />
             </div>
-  
+
             <button class="icon-button">
               <i data-lucide="settings"></i>
             </button>
-  
+
             <button class="icon-button notification">
               <i data-lucide="bell"></i>
               <span class="notification-indicator"></span>
             </button>
-  
+
             <div class="profile-image">
-              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1064&q=80" alt="Profile">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1064&q=80"
+                alt="Profile"
+              />
             </div>
           </div>
         </header>
-        <script>
-            lucide.createIcons();
-          </script>
-          <script src="./js/afterlogin.js"></script>
-        </body>
-        </html>
-        
+
+        <!-- Money Balance Show -->
+        <div class="money-maincard">
+          <div class="card-container">
+            <div class="card yellow">
+              <div class="icon">
+                <img src="./svg/money-bag.svg" alt="Balance Icon" />
+              </div>
+              <div class="title">Current Balance</div>
+              <div class="amount" id="currentBalance">$99.02</div>
+            </div>
+
+            <div class="card blue">
+              <div class="icon">
+                <img src="./svg/deposit.svg" alt="Deposit Icon" />
+              </div>
+              <div class="title">Total Deposit</div>
+              <div class="amount" id="totalDeposit">Rs 999.99</div>
+            </div>
+
+            <div class="card pink">
+              <div class="icon">
+                <img src="./svg/spent.svg" alt="Spent Icon" />
+              </div>
+              <div class="title">Total Spent</div>
+              <div class="amount" id="totalSpent">$999.99</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="./js/afterlogin.js"></script>
+  </body>
+</html>

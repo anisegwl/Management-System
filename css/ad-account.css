@@ -1,0 +1,68 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .transaction-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  .icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .title {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  .amount {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .yellow .icon {
+    background-color: #fff3cd;
+  }
+  
+  .blue .icon {
+    background-color: #dbeafe;
+  }
+  
+  .pink .icon {
+    background-color: #fcdce0;
+  }
+  
+  .money-maincard{
+    padding: 40px;
+  }
