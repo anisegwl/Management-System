@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+   
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    height: 675px;
+    
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .tab {
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .tab.active {
+    border-bottom: 2px solid #1e40af;
+    color: #1e40af;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  
+  .profile-pic {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .profile-pic img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .edit-btn {
+    font-size: 12px;
+    padding: 4px 10px;
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  
+  label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  .submit-btn {
+    margin-top: 10px;
+    float: right;
+    padding: 10px 24px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  .container{
+    margin-left: 125px;
+    margin-top: 20px;
+  }
