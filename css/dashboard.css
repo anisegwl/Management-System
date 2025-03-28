@@ -1,0 +1,87 @@
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+}
+
+/* Overriding styles for the recent transaction card */
+.recent-transactions {
+  width: 350px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2f2f4c;
+  margin-bottom: 20px;
+}
+
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.transaction-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrap img {
+  width: 22px;
+  height: 22px;
+}
+
+.yellow {
+  background-color: #fff7cd;
+}
+
+.blue {
+  background-color: #e0ecff;
+}
+
+.teal {
+  background-color: #ccf7f2;
+}
+
+.details {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2f2f4c;
+  margin-bottom: 3px;
+}
+
+.date {
+  font-size: 12px;
+  color: #a1a1b5;
+}
+
+.amount {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.amount.plus {
+  color: #2dd4bf;
+}
+
+.card-row{
+  margin-left: 30px;
+}
