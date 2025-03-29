@@ -1,0 +1,118 @@
+.all-icons {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 30px 100px;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    overflow: hidden;
+    color: #333;
+  }
+  
+  .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .icon.personal { background-color: #dbe7ff; }
+  .icon.corporate { background-color: #ffedc2; }
+  .icon.business { background-color: #ffdce4; }
+  .icon.custom { background-color: #c5f6f5; }
+  
+  .title {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+  
+  .amount {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+  }
+  
+  .account-statement-section {
+    padding: 40px 100px;
+    background-color: #f9fbff;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+  }
+  
+  .account-statement-section h2 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .statement-table-wrapper {
+    background: #fff;
+    border-radius: 12px;
+    overflow-x: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  }
+  
+  .statement-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+  }
+  
+  .statement-table thead {
+    background-color: #f1f5fb;
+    color: #6b7280;
+    font-size: 14px;
+  }
+  
+  .statement-table th,
+  .statement-table td {
+    padding: 14px 20px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+    color: #374151;
+  }
+  
+  .statement-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .view-btn {
+    padding: 6px 16px;
+    border: 1px solid #3b82f6;
+    color: #3b82f6;
+    background: transparent;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .view-btn:hover {
+    background-color: #e0ecff;
+  }
+  
