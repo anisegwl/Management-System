@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+
+  {% load static %}
+  <link rel="shortcut icon" href="{% static 'logo/HypeAd logo.png' %}" type="image/x-icon">
+  <link rel="stylesheet" href="{% static 'css/afterlogin.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo-container">
+        <img src="{% static 'logo/HypeAd logo.png' %}" alt="Company Logo" class="sidebar-logo" />
+      </div>
+      
+      <nav class="sidebar-nav">
+        <a href="{% url 'dashboard' %}" class="sidebar-link active ">
+          <i data-lucide="home"></i>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="{% url 'transaction' %}" class="sidebar-link ">
+          <i data-lucide="dollar-sign"></i>
+          <span>Transaction</span>
+        </a>
+
+
+        <a href="{% url 'ad_account' %}" class="sidebar-link">
+          <i data-lucide="users"></i>
+          <span> AD Accounts</span>
+        </a>
+
+        <a href="#" class="sidebar-link">
+          <i data-lucide="credit-card"></i>
+          <span>Billings</span>
+        </a>
+        <a href="#" class="sidebar-link">
+          <i data-lucide="package"></i>
+          <span>Services</span>
+        </a>
+        <a href="#" class="sidebar-link">
+          <i data-lucide="file-text"></i>
+          <span>Reports</span>
+        </a>
+        
+        <a href="#" class="sidebar-link">
+          <i data-lucide="life-buoy"></i>
+          <span>Support</span>
+        </a>
+        <a href="#" class="sidebar-link">
+          <i data-lucide="user"></i>
+          <span>My Account</span>
+        </a>
+        <a href="{% url 'settings' %}" class="sidebar-link">
+          <i data-lucide="settings"></i>
+          <span>Settings</span>
+          
+        </a>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Header -->
+      <header class="header">
+        <h1 class="page-title">Dashboard </h1>
+
+        <div class="header-actions">
+          <div class="search-box">
+            <i data-lucide="search"></i>
+            <input type="text" placeholder="Search for something">
+          </div>
+
+          <button class="icon-button">
+            <i data-lucide="settings"></i>
+          </button>
+
+          <button class="icon-button notification">
+            <i data-lucide="bell"></i>
+            <span class="notification-indicator"></span>
+          </button>
+
+          <div class="profile-image">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1064&q=80" alt="Profile">
+          </div>
+        </div>
+      </header>
+
+      <!-- Dashboard Content -->
+      <main class="dashboard-content">
+        <!-- Cards Row -->
+        <div class="card-row">
+          <!-- Purple Card -->
+          <div class="credit-card purple">
+            <div class="card-content">
+              <div class="card-header">
+                <div>
+                  <p class="card-label">Ad Budget</p>
+                  <h3 class="card-balance">$5,756</h3>
+                </div>
+                <div class="card-chip">
+                  <div class="chip-circle red"></div>
+                  <div class="chip-circle orange"></div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="card-number">**** **** **** 1289</div>
+                <div class="card-info">
+                  <div>
+                    <p class="card-label">Account Manager</p>
+                    <p class="card-value">Hype AD</p>
+                  </div>
+                  <div>
+                    <p class="card-label">Valid Thru</p>
+                    <p class="card-value">12/24</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- White Card -->
+          <div class="credit-card white">
+            <div class="card-content">
+              <div class="card-header">
+                <div>
+                  <p class="card-label">Total Spend</p>
+                  <h3 class="card-balance">$12,350</h3>
+                </div>
+                <div class="visa-logo"><span>VISA</span></div>
+              </div>
+              <div class="card-footer">
+                <div class="card-number">**** **** **** 8567</div>
+                <div class="card-info">
+                  <div>
+                    <p class="card-label">Client</p>
+                    <p class="card-value">Jane Smith</p>
+                  </div>
+                  <div>
+                    <p class="card-label">Valid Thru</p>
+                    <p class="card-value">08/26</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="card recent-transactions">
+          <h3 class="section-title">Recent Transaction</h3>
+        
+          <div class="transaction-list">
+            <div class="transaction-item">
+              <div class="icon-wrap yellow">
+                <img src="{% static 'svg/google.svg' %}" alt="Google Ads Icon" />
+              </div>
+              <div class="details">
+                <p class="label">Google Ads</p>
+                <p class="date">28 January 2021</p>
+              </div>
+              <div class="amount plus">+$2,500</div>
+            </div>
+        
+            <div class="transaction-item">
+              <div class="icon-wrap blue">
+                <img src="{% static 'svg/facebook.svg' %}" alt="Facebook Icon" />
+              </div>
+              <div class="details">
+                <p class="label">Facebook</p>
+                <p class="date">25 January 2021</p>
+              </div>
+              <div class="amount plus">+$2,500</div>
+            </div>
+        
+            <div class="transaction-item">
+              <div class="icon-wrap teal">
+                <img src="{% static 'svg/meta.svg' %}" alt="Meta Icon" />
+              </div>
+              <div class="details">
+                <p class="label">Meta Ads</p>
+                <p class="date">21 January 2021</p>
+              </div>
+              <div class="amount plus">+$5,400</div>
+            </div>
+          </div>
+        </div>
+        
+</div>
+
+        </div>
+
+          <script src="{% static 'js/script.js' %}"></script>
+          <script>
+            lucide.createIcons();
+          </script>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="{% static 'js/dashboard.js' %}"></script>
+        </body>
+      </html>
+      
