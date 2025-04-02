@@ -12,3 +12,6 @@ def setting(request):
 
 def transaction(request):
     return render(request, "transaction.html")
+
+def billing(request):
+    return render(request, "billings.html")

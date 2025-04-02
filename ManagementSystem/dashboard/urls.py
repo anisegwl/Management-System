@@ -5,5 +5,7 @@ urlpatterns = [
     path('setting/', setting, name='settings'),
     path('transaction/', transaction, name='transaction'),
     path('ad_account/', ad_account, name='ad_account'),
+    path('billing/', billing, name='billing'),
+
 
 ]
